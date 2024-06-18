@@ -1,10 +1,49 @@
-# Final Project 
-Your repo should contain: your data used in the project, your Jupyter notebook(s) and any other important materials. 
-If you have been following the steps in your labs each week, there are only finishing touches to do on your final project. I am leaving specifics open to allow for creativity, but make your report look good!
-## Grading Rubric
-1. Organization- Your notebook (or, if long, you should have more than one notebook) should have markdown sections for titles, descriptions and comments. Your notebook should follow the steps we have been working on all quarter, i.e. data loading, cleaning and munging, description, research questions, plots, model selections, metrics, results, saving models, and conclusions.
-2. Neatness and clarity- Your notebook should have been run. Your notebook should absolutely not have any more than a few rows of data displayed at any point. Your plots should be labeled as covered in class, and be clear, useful plots appropriately sized within the notebook. You should be as clear as possible explaining your steps. Just having code cells and no explanations or analysis or reflections will not be scored as highly as if you do. You should have no spelling errors.
-3. Code correctness- Your code should all run (some warnings as disussed in class are okay, other warnings should be fixed). Your model choices should be appropriate to your data. Your models should have appropriate accuracy metrics, with results and explanations. Your code should be organized (i.e. do not have large cells with unorganized code, use functions in separate cells).
-4. Scope- your project should tell a story and have a beginning, middle and end. Do not say "I ran out of time". You can however, in your conclusion, mention future work that would be interesting to tackle. Your project should look like something that took a few months to craft.
-5. Conclusion- Your project should have a concluding paragraph circling back to the research question and providing insight on what you found, can't make claims about, etc.
-6. Food for thought: Is this something to add to your resume? Is it a good showcase of your efforts to put into your own github repo?
+Bangkok Airbnb Accommodation Prices Analysis
+By Baila Zwiebel
+Introduction
+
+This project investigates several key questions about Airbnb accommodations in Bangkok, with the primary objective of predicting accommodation prices for the year 2025 and identifying optimal listing prices based on various property features.
+Research Questions
+
+Main questions:
+
+    Can we predict accommodation prices in Bangkok for 2025?
+    Can we predict what price a property in Bangkok should be listed at based on different features?
+
+Additional questions:
+
+    What is the cheapest neighborhood in Bangkok?
+    What is the cheapest season for each neighborhood?
+    How do seasons affect the pricing and availability of listings?
+    What are the common characteristics of highly rated listings?
+    Which types of properties are most commonly booked?
+    How do the lengths of stays vary by season and what impact does this have on pricing?
+    Can seasonal availability data predict pricing trends for peak and off-peak seasons?
+    Which neighborhoods show the highest variability in pricing within the same house type?
+
+Methodology
+Data Analysis
+
+    Linear Regression: Used to predict prices but showed poor model performance.
+    Time Series Analysis (ARIMA): Forecasted pricing trends up to 2025 with some degree of predictability.
+    Multiple Regression Models: Analyzed with full and reduced sets of features. Random Forest and Extra Trees Regressors highlighted.
+    Classification Models: Employed to predict price bins; Random Forest and Extra Trees Classifiers showed the best performance.
+
+Additional Techniques
+
+    DBSCAN & Dendrogram: Attempted but unsuccessful in clustering data effectively.
+    K-means: Successfully clustered data based on latitude and longitude, focusing on neighborhoods.
+
+Key Findings
+
+    Cheapest Neighborhood: Bang Khae emerged as the most affordable.
+    Seasonal Pricing: Winter typically offers the lowest prices, varying by neighborhood.
+    High Demand: Entire homes have the lowest average days available, indicating higher demand.
+    Tourist Hotspots: Vadhana shows high popularity with limited average availability.
+    Seasonal Demand Fluctuations: Prices peak during dry months (April and October) and dip during the monsoon season (June to September).
+
+Conclusion
+
+The project faced challenges in addressing the main research questions directly due to model limitations and external factors affecting predictability. However, classification models provided insights into price bin predictions based on property features.
+
+Property owners can use this analysis to decide on pricing strategies, while renters can identify the best times and neighborhoods for cost-effective travel. The variability within neighborhoods based on room types and other features provides further granularity to optimize decision-making for both hosts and guests in Bangkok's Airbnb market.
