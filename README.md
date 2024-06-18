@@ -1,5 +1,7 @@
 Bangkok Airbnb Accommodation Prices Analysis
+
 By Baila Zwiebel
+
 Introduction
 
 This project investigates several key questions about Airbnb accommodations in Bangkok, with the primary objective of predicting accommodation prices for the year 2025 and identifying optimal listing prices based on various property features.
